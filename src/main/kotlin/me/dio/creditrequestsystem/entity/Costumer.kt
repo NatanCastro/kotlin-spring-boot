@@ -5,7 +5,7 @@ import java.math.BigDecimal
 import me.dio.credit.application.system.entity.Address
 
 @Entity
-//@Table(name = "Cliente")
+@Table(name = "Client")
 data class Customer(
   @Column(nullable = false) var firstName: String = "",
   @Column(nullable = false) var lastName: String = "",

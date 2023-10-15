@@ -6,8 +6,8 @@ import java.time.LocalDate
 import java.util.UUID
 import me.dio.credit.application.system.enummeration.Status
 
-@Entity
-//@Table(name = "Credito")
+@Entity 
+@Table
 data class Credit (
   @Column(nullable = false, unique = true) var creditCode: UUID = UUID.randomUUID(),
   @Column(nullable = false) val creditValue: BigDecimal = BigDecimal.ZERO,
