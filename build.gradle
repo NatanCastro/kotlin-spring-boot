@@ -6,6 +6,12 @@ plugins {
 	id 'org.jetbrains.kotlin.jvm' version '1.8.22'
 	id 'org.jetbrains.kotlin.plugin.spring' version '1.8.22'
 	id 'org.jetbrains.kotlin.plugin.jpa' version '1.8.22'
+    id "org.flywaydb.flyway" version "9.22.3"
+}
+
+flyway {
+    url = 'jdbc:h2:mem:credit_system_db'
+    user = 'sa'
 }
 
 group = 'me.dio'

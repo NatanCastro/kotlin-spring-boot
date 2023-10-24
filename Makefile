@@ -1,5 +1,5 @@
 startTest:
-	./gradlew bootRun
+	PROFILE=test ./gradlew bootRun
 startDev:
 	PROFILE=dev ./gradlew bootRun
 debug:

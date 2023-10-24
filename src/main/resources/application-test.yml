@@ -12,8 +12,10 @@ spring:
     password:
     driver-class-name: org.h2.Driver
   jpa:
+    show-sql: true
     hibernate:
-      ddl-auto: create
+      propertiers:
+        hibernate.format-sql: true
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
